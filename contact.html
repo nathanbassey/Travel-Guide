@@ -1,31 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
 
-        <title>Contact</title>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="attractions.html">Attractions</a>
 
-    </head>
+    </nav>
+    <hr>
 
-    <body>
-        <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <h1>Contact</h1>
-            </header>
+    <main>
+        <article>
+            <form action="http://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                        <p>
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" autocomplete="on" required>
+                        </p>
 
-            <main>
+                        <p>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" autocomplete="on">
+                        </p>
 
-            </main>
-            
-            <footer>
+                        <p>
+                            <label for="Telephone">Telephone</label>
+                            <input type="tel" name="Telephone" id="Telephone" placeholder="000-000-0000" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                        </p>
 
-            </footer>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
 
-    </body>
+                        <p>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </p>
 
+                        <p>
+                            <label for="Remember">Remember me</label>
+                            <input type="checkbox" name="remem" id="Remember">
+                        </p>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <p>
+                        <label for="Feedback">Text Area</label>
+                    </p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Checkbox</legend>
+                    <p>Do you have pets?</p>
+                    <p>
+                        <label for="dog">Dog</label>
+                        <input type="checkbox" name="dog" id="dog">
+                    </p>
+
+                    <p>
+                        <label for="cat">Cat</label>
+                        <input type="checkbox" name="cat" id="cat">
+                    </p>
+
+                    <p>
+                        <label for="fish">Fish</label>
+                        <input type="checkbox" name="fish" id="fish">
+                    </p>
+
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Radio Button</legend>
+                    <p>What is your favourite food?</p>
+                    <p>
+                        <label for="pizza">Pizza:</label>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                    </p>
+
+                    <p>
+                        <label for="tacos">Tacos:</label>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                    </p>
+
+                    <p>
+                        <label for="other">Other:</label>
+                        <input type="radio" name="food" id="other" value="other">
+                    </p>
+
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Option Groups</legend>
+
+                    <select name="coffee" id="coffee">
+                        <optgroup label="Coffee">
+                            <option value="regular coffee">Regular Coffee</option>
+                            <option value="Iced Coffee">Iced Coffee</option>
+                            <option value="Latte">Latte</option>
+                            <option value="Cortado">Cortado</option>
+                        </optgroup>
+                    </select>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit" formaction="http://httpbin.org/post">Submit</button>
+                <button type="reset">Reset</button>
+
+
+            </form>
+        </article>
+    </main>
+    <br>  <hr>
+    <footer>
+        <a href="#">Back to top</a>
+
+    </footer>
+    
+</body>
 </html>
